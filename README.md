@@ -137,6 +137,7 @@ bgm-recommender/
 - **First Run Performance**: The first time you run the program, it will generate embeddings for all songs in the library. This may take several minutes (depending on the number of songs and your hardware). Subsequent runs will use cached embeddings and be much faster.
 - **Model Requirements**: The default Qwen3-Embedding-4B model requires ~8GB of RAM. For resource-constrained environments, use a smaller model like `all-MiniLM-L6-v2`.
 - **Lyrics Quality**: Recommendation accuracy depends on the quality and completeness of the lyrics in your library. More detailed lyrics lead to better semantic matching.
+- **10W Lyrics Corpus**：When using this library, please compress two .zip file, then put all the files inside one folder, which two .zip file contain. After that, run merge Lylyrics.py, replace the original bgm Library.json with the newly generated bgm Library.json, and delete the embeddings folder.
 
 ## 🤝 Contributing
 
